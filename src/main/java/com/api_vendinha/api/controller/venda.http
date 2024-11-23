@@ -1,0 +1,15 @@
+POST http://localhost:8081/api/vendas/venda
+Content-Type: application/json
+
+{
+    "quantidade": 5,
+    "price": 69.99,
+    "user_id": "Elisa Sobrinho",
+    "product_id": "Shampoo"
+}
+
+### Get all vendas
+GET http://localhost:8081/api/vendas/findAll
+
+### Find vendas by ID
+GET http://localhost:8081/api/vendas/findById/2

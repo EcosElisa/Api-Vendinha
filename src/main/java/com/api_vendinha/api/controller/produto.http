@@ -1,0 +1,33 @@
+### Save a new produto
+POST http://localhost:8081/api/produtos/save
+Content-Type: application/json
+
+{
+    "name": "Esponja",
+    "quantidade": 30,
+    "preco": 9.99,
+    "active": true,
+    "user_id": null
+}
+
+### Update an existing Produto
+PUT http://localhost:8081/api/produtos/update/3
+Content-Type: application/json
+
+{
+    "name": "Esponja",
+    "quantidade": 30,
+    "preco": 9.99,
+    "active": true,
+    "user_id": false
+}
+
+### Delete a produtos
+DELETE http://localhost:8081/api/produtos/deletar/7
+
+### Get all produto
+GET http://localhost:8081/api/produtos/findAll
+
+### Find produtos by ID
+GET http://localhost:8081/api/produtos/findById/1
+
